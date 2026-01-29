@@ -4,6 +4,9 @@ section {
     z-index: 0;
 }
 
+section:nth-child(even) {
+    background-color: #eee;
+}
 
 .inner {
     max-width: 1640px;
@@ -12,14 +15,14 @@ section {
 }
 
 h2.tit {
-    font-size: 100px;
+    font-size: clamp(50px,7vw,100px);
     font-weight: 800;
 }
 
 p.txt {
-    font-size: 17px;
+    font-size: clamp(12px, 1.5vw,17px);
     max-width: 470px;
-    margin-top: 30px;
+    margin-top: clamp(12px,2.4vw,30px);
 }
 
 .tit-wrap {
@@ -28,11 +31,11 @@ p.txt {
 
 a.btn {
     display: inline-flex;
-    width: 150px;
-    height: 47px;
+    width: clamp(116px,14vw,150px);
+    height: clamp(42px,4.2vw,47px);
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: clamp(16px,1.9vw,22px);
     font-weight: 900;
     background-color: #801086;
     color: #fff;
